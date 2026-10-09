@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Radio fouedb Music Playlist">
+
+<title>Radio fouedb Music</title>
+
+<link rel="shortcut icon" href="https://radiofouedbmusic.weebly.com/uploads/2/7/3/9/27392993/favicon.ico" type="image/x-icon">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+<link rel="stylesheet" href="https://fouedb.weebly.com/uploads/2/7/3/9/27392993/base-rfbm-playlists-player-premium.css">
+
+<script defer src="https://fouedb.weebly.com/uploads/2/7/3/9/27392993/scripts-rfbm-playlists-player-premium.js"></script>
+
+</head>
+
+<body>
+
+<div id="playlistLockScreen">
+
+    <div id="playlistLoginBox">
+
+        <h3>Restricted access</h3>
+
+        <input
+            type="email"
+            id="playlistAccessEmail"
+            placeholder="Your e-mail"
+            autocomplete="email"
+        >
+
+        <input
+            type="password"
+            id="playlistAccessCode"
+            placeholder="Enter your password"
+            autocomplete="current-password"
+        >
+
+        <button
+            id="playlistUnlockBtn"
+            type="button"
+        >
+            Unlock
+        </button>
+
+        <div id="playlistErrorMsg"></div>
+
+        <a
+            id="playlistBackBtn"
+            href="https://fouedb-support.github.io/RfbM-Premium/"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            Return to Radio
+        </a>
+
+    </div>
+
+</div>
+
+
+<div
+    class="playlist-player"
+    id="playlistPlayer"
+    style="display:none;">
+
+
+    <div class="playlist-cover">
+
+        <img
+            id="playlistCover"
+            src="https://radiofouedbmusic.weebly.com/uploads/2/7/3/9/27392993/noalbum-white.png"
+            alt="Album"
+        >
+
+    </div>
+
+
+    <div class="playlist-info">
+
+        <div
+            class="playlist-title"
+            id="playlistTitle"
+        >
+            Select a title
+        </div>
+
+
+        <div
+            class="playlist-artist"
+            id="playlistArtist"
+        >
+            Playlist
+        </div>
+
+    </div>
+  
+    
+    <div class="playlist-progress-container">
+
+        <div
+            id="playlistProgressBar"
+            class="playlist-progress-bar">
+
+        <div
+            id="playlistProgressThumb"
+            class="playlist-progress-thumb">
+        </div>
+
+        </div>
+
+        <div class="playlist-time">
+
+            <span id="playlistElapsed">
+                00:00
+            </span>
+
+
+            <span id="playlistDuration">
+                00:00
+            </span>
+
+        </div>
+        
+        </div>
+        
+
+    <div class="playlist-controls">
+
+        <button
+            id="playlistPrevious"
+            title="Previous"
+            type="button"
+        >
+            ⏮
+        </button>
+
+
+        <button
+            id="playlistPlay"
+            class="playlist-play"
+            title="Play"
+            type="button"
+        >
+            ▶
+        </button>
+
+
+        <button
+            id="playlistNext"
+            title="Next"
+            type="button"
+        >
+            ⏭
+        </button>
+
+    </div>
+
+
+    <div class="playlist-volume-container">
+
+            <i class="fas fa-volume-up"></i>
+
+            <input
+                id="playlistVolume"
+                type="range"
+                min="0"
+                max="100"
+                value="80">
+
+    </div>
+
+
+    <div class="playlist-options">
+
+        <button
+            id="playlistShuffle"
+            title="Shuffle"
+            type="button"
+        >           
+            <i class="fas fa-random"></i>
+        </button>
+
+
+        <button
+            id="playlistRepeat"
+            title="Repeat"
+            type="button"
+        >         
+           <i class="fas fa-refresh"></i>
+        </button>
+
+    </div>
+
+
+    <div class="playlist-artist-selector">
+
+        <label for="playlistArtistSelect">
+            Artists
+        </label>
+
+
+        <select id="playlistArtistSelect">
+        </select>
+
+    </div>
+
+
+    <div
+        class="playlist-list"
+        id="playlistList"
+    ></div>
+
+
+</div>
+   
+<script src="https://fouedb.weebly.com/uploads/2/7/3/9/27392993/tra-cov-rfbm.js"></script>
+
+</body>
+</html>
