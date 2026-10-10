@@ -21,7 +21,6 @@
 
 <body>
 
-
 <div id="playlistLockScreen">
 
     <div id="playlistLoginBox">
@@ -57,22 +56,50 @@
             target="_blank"
             rel="noopener noreferrer"
         >
-            Return to Radio
+            Return To Radio
         </a>
 
     </div>
 
 </div>
 
+<!-- =========================
+     PLAYLIST PLAYER
+     ========================= -->
 
 <div
     class="playlist-player"
     id="playlistPlayer"
     style="display:none;">
         
-    <a id="playlistBackPlayerBtn" href="https://fouedb-support.github.io/RfbM-Premium/" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, '_blank', 'popup=no'); return false;"> Return to Radio </a>
+    <a id="playlistBackPlayerBtn" href="https://fouedb-support.github.io/RfbM-Premium/" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, '_blank', 'popup=no'); return false;"> R::f.b::M </a>
 
 
+<div class="playlist-media-layout">
+
+    <!-- Volume à gauche -->
+    <div class="playlist-volume-container">
+
+    <input
+        id="playlistVolume"
+        type="range"
+        min="0"
+        max="100"
+        value="80"
+    >
+
+    <i
+        id="playlistMuteBtn"
+        class="fas fa-volume-up"
+        role="button"
+        tabindex="0"
+        title="Mute"
+        aria-label="Mute the sound"
+    ></i>
+
+</div>
+
+    <!-- Album in the center -->
     <div class="playlist-cover">
 
         <img
@@ -83,6 +110,33 @@
 
     </div>
 
+    <!-- Progression to the right, timer included -->
+    <div class="playlist-progress-container">
+
+        <div
+            id="playlistProgressBar"
+            class="playlist-progress-bar"
+        >
+            <div
+                id="playlistProgressThumb"
+                class="playlist-progress-thumb"
+            ></div>
+        </div>
+
+        <div class="playlist-time">
+
+            <span id="playlistElapsed">00:00</span>
+
+            <span id="playlistDuration">00:00</span>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+    <!-- SONG INFO -->
 
     <div class="playlist-info">
 
@@ -102,36 +156,9 @@
         </div>
 
     </div>
-  
-    
-    <div class="playlist-progress-container">
-
-        <div
-            id="playlistProgressBar"
-            class="playlist-progress-bar">
-
-        <div
-            id="playlistProgressThumb"
-            class="playlist-progress-thumb">
-        </div>
-
-        </div>
-
-        <div class="playlist-time">
-
-            <span id="playlistElapsed">
-                00:00
-            </span>
-
-
-            <span id="playlistDuration">
-                00:00
-            </span>
-
-        </div>
         
-        </div>
-        
+
+    <!-- CONTROLS -->
 
     <div class="playlist-controls">
 
@@ -165,19 +192,7 @@
     </div>
 
 
-    <div class="playlist-volume-container">
-
-            <i class="fas fa-volume-up"></i>
-
-            <input
-                id="playlistVolume"
-                type="range"
-                min="0"
-                max="100"
-                value="80">
-
-    </div>
-
+    <!-- OPTIONS -->
 
     <div class="playlist-options">
 
@@ -200,6 +215,8 @@
 
     </div>
 
+
+    <!-- PLAYLIST -->
 
     <div class="playlist-artist-selector">
 
