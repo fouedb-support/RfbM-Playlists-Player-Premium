@@ -62,15 +62,51 @@
     </div>
 
 </div>
+    
+         <button id="autoHidePlaylistToggle" class="auto-hide-playlist-btn active"></button>     
+    <div id="autoHidePlaylistSongInfo">
 
+        <div id="autoHidePlaylistTitle"></div>
 
+        <div id="autoHidePlaylistArtist"></div>
+
+        <div id="autoHidePlaylistTimer">
+
+            <span id="autoHidePlaylistElapsed">
+                00:00
+            </span>
+            
+            <span class="auto-hide-playlist-separator">
+
+                /
+
+            </span>
+
+            <span id="autoHidePlaylistDuration">
+                00:00
+            </span>
+
+        </div>
+
+        <div id="autoHidePlaylistProgressContainer">
+            <div id="autoHidePlaylistProgressBar">
+            <div
+                id="autoHidePlaylistProgressThumb"
+                class="auto-hide-playlist-progress-thumb">
+            </div>
+        </div>
+        </div>
+                    
+        <div id="autoHidePlaylistName">RfbM Playlists Player</div>
+
+    </div>
+    
 <div
     class="playlist-player"
     id="playlistPlayer"
     style="display:none;">
         
     <a id="playlistBackPlayerBtn" href="https://fouedb-support.github.io/RfbM-Premium/" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, '_blank', 'popup=no'); return false;"> R::f.b::M </a>
-
 
 <div class="playlist-media-layout">
 
@@ -129,7 +165,6 @@
 
 </div>
 
-
     <div class="playlist-info">
 
         <div
@@ -139,7 +174,6 @@
             Select a title
         </div>
 
-
         <div
             class="playlist-artist"
             id="playlistArtist"
@@ -148,7 +182,6 @@
         </div>
 
     </div>
-        
 
     <div class="playlist-controls">
 
@@ -179,7 +212,6 @@
         
     </div>
 
-
     <div class="playlist-options">
 
         <button
@@ -201,11 +233,10 @@
 
     </div>
 
-
     <div class="playlist-artist-selector">
 
         <label for="playlistArtistSelect">
-            Artists
+            Playlists
         </label>
 
 
@@ -214,12 +245,10 @@
 
     </div>
 
-
     <div
         class="playlist-list"
         id="playlistList"
     ></div>
-
 
 </div>
    
