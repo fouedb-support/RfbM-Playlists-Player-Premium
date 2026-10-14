@@ -62,9 +62,18 @@
     </div>
 
 </div>
-    
-         <button id="autoHidePlaylistToggle" class="auto-hide-playlist-btn active"></button>     
+     
+         <button id="autoHidePlaylistToggle" class="auto-hide-playlist-btn active"></button>
+         
     <div id="autoHidePlaylistSongInfo">
+            
+<div id="autoHidePlaylistCoverContainer">
+    <img
+        id="autoHidePlaylistCover"
+        src="https://radiofouedbmusic.weebly.com/noalbum-white.png"
+        alt="Album"
+    >
+</div>
 
         <div id="autoHidePlaylistTitle"></div>
 
@@ -100,7 +109,7 @@
         <div id="autoHidePlaylistName">RfbM Playlists Player</div>
 
     </div>
-    
+
 <div
     class="playlist-player"
     id="playlistPlayer"
@@ -110,6 +119,7 @@
 
 <div class="playlist-media-layout">
 
+   
     <div class="playlist-volume-container">
 
     <input
@@ -131,6 +141,7 @@
 
 </div>
 
+
     <div class="playlist-cover">
 
         <img
@@ -141,6 +152,7 @@
 
     </div>
 
+    
     <div class="playlist-progress-container">
 
         <div
@@ -165,6 +177,7 @@
 
 </div>
 
+
     <div class="playlist-info">
 
         <div
@@ -174,6 +187,7 @@
             Select a title
         </div>
 
+
         <div
             class="playlist-artist"
             id="playlistArtist"
@@ -182,6 +196,7 @@
         </div>
 
     </div>
+        
 
     <div class="playlist-controls">
 
@@ -212,6 +227,7 @@
         
     </div>
 
+
     <div class="playlist-options">
 
         <button
@@ -222,7 +238,6 @@
             <i class="fas fa-random"></i>
         </button>
 
-
         <button
             id="playlistRepeat"
             title="Repeat"
@@ -232,23 +247,59 @@
         </button>
 
     </div>
+            
+    <div id="playlistNavigation" class="playlist-navigation">
 
-    <div class="playlist-artist-selector">
+    
+    <div id="playlistCategoryView">
 
-        <label for="playlistArtistSelect">
+        <h3 class="playlist-navigation-title">
             Playlists
-        </label>
+        </h3>
 
-
-        <select id="playlistArtistSelect">
-        </select>
+        <div id="playlistCategoryButtons"
+             class="playlist-category-buttons"></div>
 
     </div>
 
-    <div
-        class="playlist-list"
-        id="playlistList"
-    ></div>
+    
+    <div id="playlistChoicesView" style="display:none;">
+
+        <button id="playlistBackToCategories"
+                type="button"
+                class="playlist-nav-back">
+            <i class="fas fa-arrow-left"></i>
+            Back
+        </button>
+
+        <h3 id="playlistCategoryHeading"
+            class="playlist-navigation-title"></h3>
+
+        <div id="playlistChoices"
+             class="playlist-choices"></div>
+
+    </div>
+
+    
+    <div id="playlistTracksView" style="display:none;">
+
+        <button id="playlistBackToChoices"
+                type="button"
+                class="playlist-nav-back">
+            <i class="fas fa-arrow-left"></i>
+            Back to playlists
+        </button>
+
+        <h3 id="playlistTracksHeading"
+            class="playlist-navigation-title"></h3>
+
+        <div class="playlist-list" id="playlistList"></div>
+
+    </div>
+    
+    <select id="playlistArtistSelect" style="display:none;"></select>
+
+</div>
 
 </div>
    
