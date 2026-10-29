@@ -1,3 +1,2 @@
 # RfbM-Playlists-Player-Premium
-Welcome To "Radio fouedb Music". "RfbM" Broadcasts the best songs and instrumental music, 
-            24/24 hours and 7/7 days. Non-stop Music, Enjoy. WebSites: "https://radiofouedbmusic.weebly.com" all country, "https://live365.com/station/Radio-fouedb-Music-a82574" United States-Canada-United Kingdom-Mexico, RfbM-Player: "https://fouedb-support.github.io/RfbM-Playlists-Player-Premium".
+Welcome To "Radio fouedb Music" + "RfbM-Playlists-Player-Premium", Select and organize your playlists however you like, whenever you want."RfbM" Broadcasts the best songs and instrumental music, 24/24 hours and 7/7 days. Non-stop Music, Enjoy. WebSites: "https://radiofouedbmusic.weebly.com" all country, "https://live365.com/station/Radio-fouedb-Music-a82574" United States-Canada-United Kingdom-Mexico, RfbM-Player: "https://fouedb-support.github.io/RfbM-Playlists-Player-Prremium/".
